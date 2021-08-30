@@ -1,0 +1,37 @@
+#signup{
+    .signup-bg{
+        background-color: #F4F5F3;
+        min-height: 100vh;
+     
+     }
+     .input-style{
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 6px;
+     }
+     .container-bg{
+        background-color: #fff;
+        min-height: 40vh;
+        border-radius: 10px;
+     }
+
+     .card-header{
+        background-color: #15225D;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 70px;
+        font-size: 25px;
+        color: #fff;
+        font-weight: bold;
+     }
+     .button-bg{
+        height: 50px;
+        background-color: #E04244;
+        color: #ffffff;
+     }
+     .prof-bg{
+        font-size: 20px;  
+        border-radius: 6px;
+        background-color: #ffffff;
+      }
+}
