@@ -166,7 +166,7 @@ export class SignUp extends Component {
                       </div>
                       <div className="col-12 py-3 px-3">
                         <button className="col-12 btn button-bg " value="Submit" >
-                          <Link className="text-white" to={"/"}>Create</Link>
+                          <Link className="text-white">Create</Link>
                           </button>
                         <p className=" pt-3 pb-2 text-center">
                           Already Have an Account..? <Link className="text-danger font-weight-bold" to={"/"}>Go Back</Link>
