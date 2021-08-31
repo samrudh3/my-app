@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const defaultUrl = 'https://api.vyasankhya.com/ups/';
+const defaultUrl = 'https://hoblist.com/movieList';
 // Add a request interceptor
 const instance = axios
     .create({
         baseURL: defaultUrl
     })
+export default instance

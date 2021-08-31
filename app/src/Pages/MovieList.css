@@ -1,0 +1,22 @@
+.innerContainer{
+    display: flex;
+}
+.img-bg{
+    width: 180px;
+}
+.img-container{
+    padding-right: 20px;
+}
+.home-container{
+    background-color: #fff;
+}
+.card-container{
+    margin: 20px 0px 20px 0px;
+}
+.container-bgm{
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(235, 235, 235);
+}

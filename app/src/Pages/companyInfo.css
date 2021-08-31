@@ -1,0 +1,10 @@
+.innerContainer{
+    display: flex;
+}
+.container-info{
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(233, 232, 232);
+}

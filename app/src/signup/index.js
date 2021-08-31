@@ -12,7 +12,7 @@ export class SignUp extends Component {
         phone: '',
         email: '',
         pass: '',
-        profession: ''
+        profession: '',
       },
       errors: {}
     }
@@ -22,10 +22,12 @@ export class SignUp extends Component {
 
   handleChange(event) {
     let signupform = this.state.signupform;
+
     signupform[event.target.name] = event.target.value;
+
     this.setState({
         signupform,
-        profession:event.target.value,
+        // profession:event.target.value,
     });
   }
   validate() {
@@ -75,6 +77,7 @@ export class SignUp extends Component {
     signupform["phone"] = "";
     signupform["email"] = "";
     signupform["pass"] = "";
+    signupform["profession"] = "";
     this.setState({ signupform: signupform });
   }
 
@@ -83,7 +86,7 @@ export class SignUp extends Component {
     errorMessage: ''
   }
 
-  useEffect(){
+  useEffect(data){
     setLocalStorage(this.state);
   }
 
@@ -152,7 +155,9 @@ export class SignUp extends Component {
                       
                       <div className="col-12 pt-3 text-center prof-bg">
                         <label>Profession</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <select value={this.state.profession} onChange={this.handleChange} className="form-select" aria-label="Default select example">
+                        <select 
+                        // value={this.state.profession} 
+                        value={this.state.signupform.profession} onChange={this.handleChange} className="form-select" aria-label="Default select example">
                           <option value="Software Developer">Software Developer</option>
                           <option value="Software Engineer" >Software Engineer</option>
                           <option value="Network Engineer">Network Engineer</option>
@@ -160,7 +165,9 @@ export class SignUp extends Component {
                         </select>
                       </div>
                       <div className="col-12 py-3 px-3">
-                        <button className="col-12 btn button-bg " value="Submit" ><Link className="text-white" to={"/"}>Create</Link></button>
+                        <button className="col-12 btn button-bg " value="Submit" >
+                          <Link className="text-white" to={"/"}>Create</Link>
+                          </button>
                         <p className=" pt-3 pb-2 text-center">
                           Already Have an Account..? <Link className="text-danger font-weight-bold" to={"/"}>Go Back</Link>
                         </p>
